@@ -1,0 +1,15 @@
+<h1>Welcome to WEBLOG</h1>
+
+<p>
+	<%= link_to 'My Blog', controller: 'articles' %>
+</p>
+
+<p>
+	Existing User? <%= link_to 'Login', new_user_session_path %>
+</p>
+<p>
+	New User? <%= link_to 'Signup', new_user_registration_path %>
+</p>
+<p>
+	<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+</p>
